@@ -36,6 +36,8 @@
 		text-transform: uppercase;
 		white-space: nowrap;
 
+
+
 		&:hover {
 			box-shadow: inset 0 0 0 2px _palette(accent-alt);
 			color: _palette(accent-alt) !important;
@@ -111,5 +113,12 @@
 				height: (_size(element-height) * 1);
 				line-height: (_size(element-height) * 1);
 			}
+		}
+	}
+
+	#login {
+		background-color: _palette(bg);
+		&:hover {
+			background-color: saturate(lighten(_palette(bg), 15), 10);
 		}
 	}

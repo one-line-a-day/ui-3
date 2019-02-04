@@ -11,6 +11,11 @@
 		display: inline-block;
 		position: relative;
 
+		&.app-store-btn {
+			// border:1px solid red;
+			width:140px;
+		}
+
 		img {
 			display: block;
 		}
