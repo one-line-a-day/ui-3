@@ -40,6 +40,8 @@
 		line-height: 2;
 	}
 
+	
+
 	a {
 		@include vendor('transition', 'border-bottom-color #{_duration(transition)} ease-in-out');
 		text-decoration: none;
@@ -88,6 +90,10 @@
 		line-height: 1.1;
 		margin: 0 0 (_size(element-margin) * 0.75) 0;
 		text-transform: none;
+
+		&.logo-text {
+			color: _palette(fg);
+		}
 	}
 
 	h2 {

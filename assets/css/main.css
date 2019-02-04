@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import 'font-awesome.min.css';
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700,300i,600i,700i|Raleway:600,800");
-/* 
+/*   
 	Paradigm Shift by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
@@ -98,7 +98,7 @@ html {
 }
 
 body {
-  background: #5052b5;
+  background: #442587;
   overflow-x: hidden;
 }
 body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -138,8 +138,8 @@ html {
 }
 
 body {
-  background-color: #5052b5;
-  color: #000000;
+  background-color: #442587;
+  color: #ffffff;
 }
 
 body, input, select, textarea {
@@ -200,6 +200,9 @@ h1 {
   line-height: 1.1;
   margin: 0 0 1.5rem 0;
   text-transform: none;
+}
+h1.logo-text {
+  color: #ffffff;
 }
 
 h2 {
@@ -1558,7 +1561,7 @@ input[type=reset].primary,
 input[type=button].primary,
 button.primary,
 .button.primary {
-  background-color: #5e42a6;
+  background-color: #fd5d67;
   box-shadow: none;
   color: #ffffff !important;
 }
@@ -1567,14 +1570,14 @@ input[type=reset].primary:hover,
 input[type=button].primary:hover,
 button.primary:hover,
 .button.primary:hover {
-  background-color: #8365d0;
+  background-color: #5e29cf;
 }
 input[type=submit].primary:active,
 input[type=reset].primary:active,
 input[type=button].primary:active,
 button.primary:active,
 .button.primary:active {
-  background-color: #5d4890;
+  background-color: #412a73;
 }
 @media screen and (max-width: 736px) {
   input[type=submit],
@@ -1604,13 +1607,6 @@ button.small,
     height: 3rem;
     line-height: 3rem;
   }
-}
-
-#login {
-  background-color: #5052b5;
-}
-#login:hover {
-  background-color: #7d7fd4;
 }
 
 /* Form */
@@ -1749,8 +1745,8 @@ select {
   text-overflow: ellipsis;
 }
 select option {
-  background-color: #5052b5;
-  color: #000000;
+  background-color: #442587;
+  color: #ffffff;
 }
 select:focus::-ms-value {
   background-color: transparent;
@@ -1779,7 +1775,7 @@ input[type=radio] {
 input[type=checkbox] + label,
 input[type=radio] + label {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -1817,14 +1813,14 @@ input[type=radio] + label:before {
 input[type=checkbox]:checked + label:before,
 input[type=radio]:checked + label:before {
   content: "";
-  background-color: #5e42a6;
-  border-color: #5e42a6;
-  color: #5052b5;
+  background-color: #442587;
+  border-color: #442587;
+  color: #442587;
 }
 input[type=checkbox]:focus + label:before,
 input[type=radio]:focus + label:before {
-  border-color: #5e42a6;
-  box-shadow: 0 0 0 1px #5e42a6;
+  border-color: #442587;
+  box-shadow: 0 0 0 1px #442587;
 }
 
 input[type=checkbox] + label:before {
@@ -2436,7 +2432,7 @@ a.arrow:before {
   -ms-transition: opacity 0.5s ease, visibility 0.5s, z-index 0.5s;
   transition: opacity 0.5s ease, visibility 0.5s, z-index 0.5s;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: rgba(80, 82, 181, 0.875);
+  background-color: rgba(68, 37, 135, 0.875);
   height: 100%;
   left: 0;
   opacity: 0;
@@ -2634,7 +2630,7 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
 }
 #wrapper:before {
   background-attachment: fixed;
-  background-color: #5e42a6;
+  background-color: #442587;
   background-position: -50% 10%;
   background-repeat: repeat-y;
   background-size: 75% auto;
@@ -2909,10 +2905,13 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   }
   #wrapper > section > header {
     background-attachment: fixed;
-    background-color: #5e42a6;
+    background-color: #442587;
     background-position: 25% 50%;
     background-repeat: repeat-y;
     background-size: 40rem auto;
+  }
+  #wrapper > section > header.cta-header {
+    background-color: #442587;
   }
   #wrapper > section > header > :last-child {
     margin-bottom: 0;

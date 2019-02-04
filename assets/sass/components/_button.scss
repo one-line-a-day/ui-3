@@ -84,7 +84,7 @@
 		}
 
 		&.primary {
-			background-color: _palette(accent);
+			background-color: _palette(login-btn);
 			box-shadow: none;
 			color: _palette(fg-bold) !important;
 
@@ -113,12 +113,5 @@
 				height: (_size(element-height) * 1);
 				line-height: (_size(element-height) * 1);
 			}
-		}
-	}
-
-	#login {
-		background-color: _palette(bg);
-		&:hover {
-			background-color: saturate(lighten(_palette(bg), 15), 10);
 		}
 	}
