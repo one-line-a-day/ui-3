@@ -89,9 +89,10 @@
 
 	h1 {
 		font-family: _font(family-logo);
-		font-size: 4rem;
+		font-size: 6rem;
 		font-weight: _font(weight);
-		letter-spacing: _font(kerning-heading-alt);
+		// letter-spacing: _font(kerning-heading-alt);
+		letter-spacing: 0;
 		line-height: 1.1;
 		margin: 0 0 (_size(element-margin) * 0.75) 0;
 		text-transform: none;
@@ -127,7 +128,8 @@
 
 	@include breakpoint('<=small') {
 		h1 {
-			font-size: 3.5rem;
+			// font-size: 3.5rem;
+			font-size: 4rem;
 			line-height: 1.1;
 		}
 
