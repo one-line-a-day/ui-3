@@ -90,6 +90,9 @@
 		text-decoration: none;
 		width: 100%;
 
+		background: _palette(ux-third);
+		// input::placeholder { color: red; }
+
 		&:invalid {
 			box-shadow: none;
 		}
@@ -223,22 +226,22 @@
 
 	::-webkit-input-placeholder {
 		opacity: 1.0;
-		color: _palette(fg-light) !important;
+		color: _palette(ux-alt-text) !important;
 	}
 
 	:-moz-placeholder {
 		opacity: 1.0;
-		color: _palette(fg-light) !important;
+		color: _palette(ux-alt-text) !important;
 	}
 
 	::-moz-placeholder {
 		opacity: 1.0;
-		color: _palette(fg-light) !important;
+		color: _palette(ux-alt-text) !important;
 	}
 
 	:-ms-input-placeholder {
 		opacity: 1.0;
-		color: _palette(fg-light) !important;
+		color: _palette(ux-alt-text) !important;
 	}
 
 	@include breakpoint('<=small') {

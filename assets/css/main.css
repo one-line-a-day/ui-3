@@ -158,7 +158,6 @@ a {
   transition: border-bottom-color 0.25s ease-in-out;
   text-decoration: none;
   color: #ffffff;
-  border-bottom: dotted 1px;
 }
 a:hover {
   text-decoration: none;
@@ -176,11 +175,15 @@ em, i {
 
 p {
   margin: 0 0 2rem 0;
+  color: #ffffff;
+}
+p.first-p {
+  color: #2e2e2e;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
-  font-family: "Raleway", Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-weight: 600;
   letter-spacing: 0.175em;
   line-height: 1.75;
@@ -201,18 +204,16 @@ h1 {
   margin: 0 0 1.5rem 0;
   text-transform: none;
 }
-h1.logo-text {
-  color: #ffffff;
-}
-
 h2 {
   font-size: 1.25rem;
   font-weight: 800;
   margin: 0 0 2rem 0;
+  color: #2e2e2e;
 }
 
 h3 {
   font-size: 0.875rem;
+  color: #ffffff;
 }
 
 h4 {
@@ -1474,7 +1475,7 @@ button,
   color: #ffffff !important;
   cursor: pointer;
   display: inline-block;
-  font-family: "Raleway", Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 0.6rem;
   font-weight: 600;
   height: 3rem;
@@ -1491,8 +1492,8 @@ input[type=reset]:hover,
 input[type=button]:hover,
 button:hover,
 .button:hover {
-  box-shadow: inset 0 0 0 2px #2ee4bb;
-  color: #2ee4bb !important;
+  box-shadow: inset 0 0 0 2px #e7404b;
+  color: #e7404b !important;
 }
 input[type=submit]:active,
 input[type=reset]:active,
@@ -1500,8 +1501,8 @@ input[type=button]:active,
 button:active,
 .button:active {
   background-color: rgba(73, 252, 212, 0.25);
-  box-shadow: inset 0 0 0 2px #2ee4bb;
-  color: #2ee4bb !important;
+  box-shadow: inset 0 0 0 2px #e7404b;
+  color: #e7404b !important;
 }
 input[type=submit].small,
 input[type=reset].small,
@@ -1570,7 +1571,7 @@ input[type=reset].primary:hover,
 input[type=button].primary:hover,
 button.primary:hover,
 .button.primary:hover {
-  background-color: #5e29cf;
+  background-color: #ffa8ad;
 }
 input[type=submit].primary:active,
 input[type=reset].primary:active,
@@ -1692,6 +1693,7 @@ textarea {
   padding: 0 1rem;
   text-decoration: none;
   width: 100%;
+  background: #fdb9ac;
 }
 input[type=text]:invalid,
 input[type=password]:invalid,
@@ -1711,13 +1713,13 @@ input[type=search]:focus,
 input[type=url]:focus,
 select:focus,
 textarea:focus {
-  border-color: #2ee4bb;
+  border-color: #e7404b;
 }
 
 label {
   color: #ffffff;
   display: block;
-  font-family: "Raleway", Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.175em;
@@ -1833,22 +1835,22 @@ input[type=radio] + label:before {
 
 ::-webkit-input-placeholder {
   opacity: 1;
-  color: rgba(0, 0, 0, 0.25) !important;
+  color: #2e2e2e !important;
 }
 
 :-moz-placeholder {
   opacity: 1;
-  color: rgba(0, 0, 0, 0.25) !important;
+  color: #2e2e2e !important;
 }
 
 ::-moz-placeholder {
   opacity: 1;
-  color: rgba(0, 0, 0, 0.25) !important;
+  color: #2e2e2e !important;
 }
 
 :-ms-input-placeholder {
   opacity: 1;
-  color: rgba(0, 0, 0, 0.25) !important;
+  color: #2e2e2e !important;
 }
 
 @media screen and (max-width: 736px) {
@@ -1897,6 +1899,8 @@ input[type=radio] + label {
 }
 .image.app-store-btn {
   width: 140px;
+  text-decoration: none;
+  margin-bottom: 20px;
 }
 .image img {
   display: block;
@@ -2657,11 +2661,8 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   justify-self: end;
   text-align: right;
 }
-#wrapper section > header h2 {
-  margin: 0 0 5rem 0;
-}
 #wrapper section > header h1 + p {
-  font-family: "Raleway", Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 0.8rem;
   letter-spacing: 0.175em;
   line-height: 2.5;
@@ -2686,7 +2687,7 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   position: relative;
 }
 #wrapper > section > header:before {
-  background: #43d9b8;
+  background: #de535c;
   content: "";
   display: block;
   margin-top: 1rem;
@@ -2697,7 +2698,7 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   position: relative;
 }
 #wrapper > section > header h1:before, #wrapper > section > header h2:before {
-  background: #43d9b8;
+  background: #de535c;
   content: "";
   display: block;
   height: 2px;
@@ -2705,7 +2706,7 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   top: 1rem;
 }
 #wrapper > section > header h1:after, #wrapper > section > header h2:after {
-  background: #43d9b8;
+  background: #de535c;
   border-radius: 0.5rem;
   content: "";
   display: block;
@@ -2750,7 +2751,7 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   height: 100%;
 }
 #wrapper > section:last-of-type > header:after {
-  background: #43d9b8;
+  background: #de535c;
   border-radius: 0.5rem;
   bottom: -1.5rem;
   content: "";
@@ -2761,7 +2762,7 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   z-index: 1;
 }
 #wrapper .copyright {
-  color: rgba(0, 0, 0, 0.25);
+  color: #2e2e2e;
   font-size: 1rem;
   left: 50vw;
   position: relative;
@@ -2905,7 +2906,7 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   }
   #wrapper > section > header {
     background-attachment: fixed;
-    background-color: #442587;
+    background-color: #c6c6c6;
     background-position: 25% 50%;
     background-repeat: repeat-y;
     background-size: 40rem auto;

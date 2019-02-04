@@ -46,7 +46,7 @@
 		@include vendor('transition', 'border-bottom-color #{_duration(transition)} ease-in-out');
 		text-decoration: none;
 		color: _palette(fg-bold);
-		border-bottom: dotted 1px;
+		// border-bottom: dotted 1px;
 
 		&:hover {
 			text-decoration: none;
@@ -65,6 +65,11 @@
 
 	p {
 		margin: 0 0 _size(element-margin) 0;
+		// background: _palette(ux-grey);
+		color: _palette(ux-white);
+		&.first-p {
+			color: _palette(ux-alt-text);
+		}
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -92,7 +97,7 @@
 		text-transform: none;
 
 		&.logo-text {
-			color: _palette(fg);
+			// color: _palette(ux-second);
 		}
 	}
 
@@ -100,10 +105,12 @@
 		font-size: 1.25rem;
 		font-weight: _font(weight-heading);
 		margin: 0 0 _size(element-margin) 0;
+		color: _palette(ux-alt-text);
 	}
 
 	h3 {
 		font-size: 0.875rem;
+		color: _palette(ux-white);
 	}
 
 	h4 {
