@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import 'font-awesome.min.css';
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700,300i,600i,700i|Raleway:600,800");
-/*   
+/*    
 	Paradigm Shift by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
@@ -208,7 +208,7 @@ h2 {
   font-size: 1.25rem;
   font-weight: 800;
   margin: 0 0 2rem 0;
-  color: #2e2e2e;
+  color: #ffffff;
 }
 
 h3 {
@@ -237,6 +237,7 @@ h6 {
   h2 {
     font-size: 1.25rem;
     line-height: 1.7;
+    color: #2e2e2e;
   }
 
   h3 {
@@ -258,6 +259,7 @@ h6 {
 
   h2 {
     font-size: 1.125rem;
+    color: #2e2e2e;
   }
 
   h3 {

@@ -106,7 +106,8 @@
 		font-size: 1.25rem;
 		font-weight: _font(weight-heading);
 		margin: 0 0 _size(element-margin) 0;
-		color: _palette(ux-alt-text);
+		// color: _palette(ux-alt-text);
+		color: _palette(ux-white);
 	}
 
 	h3 {
@@ -136,6 +137,8 @@
 		h2 {
 			font-size: 1.25rem;
 			line-height: 1.7;
+			color: _palette(ux-alt-text);
+
 		}
 
 		h3 {
@@ -158,6 +161,8 @@
 
 		h2 {
 			font-size: 1.125rem;
+			color: _palette(ux-alt-text);
+
 		}
 
 		h3 {
