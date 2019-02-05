@@ -39,6 +39,14 @@
 				object-fit: cover;
 				object-position: center;
 				width: 100%;
+
+				border:1px dashed _palette(ux-second);
+				border-radius: _size(border-radius);
+				padding:1rem;
+
+				&:hover {
+					border:1px dashed _palette(ux-white);
+				}
 			}
 
 			&.landscape {
