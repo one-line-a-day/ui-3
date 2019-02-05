@@ -2346,6 +2346,13 @@ a.arrow:before {
   }
 }
 
+a.top-top {
+  color: #fd5d67;
+}
+a.top-top:hover {
+  color: #fdb9ac;
+}
+
 /* Gallery */
 @-moz-keyframes gallery-modal-spinner {
   0% {
