@@ -145,7 +145,7 @@
 				// Intro.
 					&.intro {
 						> header {
-							padding: (($pad * 1.25) + 3rem) $pad ($pad * 1.25) $pad;
+							// padding: (($pad * 1.25) + 3rem) $pad ($pad * 1.25) $pad;
 						}
 					}
 
@@ -262,14 +262,15 @@
 									position: absolute;
 									top: 1rem;
 								}
-								
+
 // HEADER DOTS
 							// Terminator.
 								&:after {
 									background: _palette(accent-border);
 									border-radius: 0.5rem;
 									content: '';
-									display: block;
+									// display: block;
+									display: none;
 									height: 0.5rem;
 									position: absolute;
 									top: 0.75rem;
@@ -307,7 +308,7 @@
 						align-items: center;
 
 						> header {
-							padding-top: 4rem;
+							padding-top: 3rem;
 
 							// Hack: Chrome's grid implementation screws up absolute element placement within a static child element.
 								width: 100%;
@@ -345,7 +346,8 @@
 									border-radius: 0.5rem;
 									bottom: -1.5rem;
 									content: '';
-									display: block;
+									// display: block;
+									display: none;
 									height: 0.5rem;
 									position: absolute;
 									width: 0.5rem;
@@ -438,6 +440,8 @@
 						&.cta-header {
 							// border:3px solid cyan;
 							background-color: _palette(bg);
+							display: flex;
+							flex-direction: column;
 						}
 
 						> * {

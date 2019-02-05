@@ -177,5 +177,10 @@
 	}
 
 	img.logo-img {
-		width:300px;
+		// border:1px solid cyan;
+		max-width:100%;
+		display:block;
+		align-self: center;
+		padding-bottom:20px;
+		margin-top:-20px;
 	}
