@@ -68,6 +68,9 @@
 		// background: _palette(ux-grey);
 		color: _palette(ux-white);
 		&.first-p {
+			// background: _palette(ux-primary);
+			// color: _palette(ux-white);
+
 			color: _palette(ux-alt-text);
 			@include breakpoint('>=large') {
 				color: _palette(ux-white);
