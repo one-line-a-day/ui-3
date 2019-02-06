@@ -38,7 +38,7 @@
 	// Scrolly.
 		$('.scrolly')
 			.scrolly({
-				offset: 100
+				offset: 5
 			});
 
 	// Polyfill: Object fit.
