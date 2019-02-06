@@ -2638,9 +2638,11 @@ a.arrow:before {
   max-width: 300px;
   max-height: 300px;
   display: none;
+  opacity: 0;
 }
 .slide-show img.slides-img.slides-active {
   display: block;
+  opacity: 0;
 }
 
 /* Feature Icons */

@@ -7,20 +7,33 @@ class SlideShow {
         this.rightBtn = document.querySelector('.slides-btn-right');
         this.rightBtn.addEventListener("click", () => this.cycleRight());
         this.index=0;
-        this.slides[this.index].classList.add('slides-active');  
+        // fade in first slide
+        this.slides[this.index].classList.add('slides-active');
+        TweenMax.to('.slides-active',1, {opacity:1});  
     }
+
     cycleRight () {
-        this.slides[this.index].classList.remove('slides-active');  
+        // fade out
+        TweenMax.to('.slides-active',0.5, {opacity:0});
+        this.slides[this.index].classList.remove('slides-active');
+        // load next slide
         this.index === this.slides.length-1 ? this.index = 0 : this.index ++;
-        this.slides[this.index].classList.add('slides-active');  
+        this.slides[this.index].classList.add('slides-active');
+        // fade in 
+        TweenMax.to('.slides-active',0.5, {opacity:1,delay:0.5});  
       }
+
     cycleLeft() {
-        this.slides[this.index].classList.remove('slides-active');  
+        // fade out
+        TweenMax.to('.slides-active',0.5, {opacity:0});
+        this.slides[this.index].classList.remove('slides-active');
+        // load next slide
         this.index === 0 ? this.index = this.slides.length-1 : this.index --;
-        this.slides[this.index].classList.add('slides-active');  
+        this.slides[this.index].classList.add('slides-active');
+        // fade in 
+        TweenMax.to('.slides-active',0.5, {opacity:1,delay:0.5});  
     }
 }
 
 let uxSlideShow = document.querySelectorAll('.slide-show');
 uxSlideShow.forEach(el => new SlideShow(el));
-
