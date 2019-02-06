@@ -45,12 +45,21 @@
 	a {
 		@include vendor('transition', 'border-bottom-color #{_duration(transition)} ease-in-out');
 		text-decoration: none;
-		color: _palette(fg-bold);
+		color: _palette(ux-second);
 		// border-bottom: dotted 1px;
 
 		&:hover {
+			color: _palette(ux-third);
 			text-decoration: none;
 			border-bottom-color: transparent;
+		}
+
+		&.icon {
+			color: _palette(ux-white);
+
+			&:hover {
+				color: _palette(ux-third);
+			}
 		}
 	}
 
@@ -241,3 +250,21 @@
 	small {
 		font-size: 0.5rem;
 	}
+
+	.fa {
+		color: _palette(ux-third);
+		&:hover {
+			cursor:pointer;
+			color: _palette(ux-second);
+		}
+	}
+
+	
+
+	// a.top-top {
+	// 	color: _palette(ux-third);
+	// 	&:hover {
+	// 		color: _palette(ux-third);
+	// 	}
+
+	// }

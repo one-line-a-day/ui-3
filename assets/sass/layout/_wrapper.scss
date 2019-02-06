@@ -404,17 +404,22 @@
 		@include breakpoint('<=large') {
 			$pad: 4rem;
 
+			// margin:0 auto;
+			// max-width:900px;
+			// border:1px solid green;
+
 			// Pad.
 				@include wrapper-pad($pad);
 
 		}
 
 		@include breakpoint('<=medium') {
-			margin:0 auto;
-			// border:1px solid cyan;
-			max-width:600px;
-
 			$pad: 4rem;
+
+			margin:0 auto;
+			max-width:600px;
+			// border:1px solid cyan;
+
 
 			padding: 0;
 
@@ -442,7 +447,7 @@
 
 					> .content {
 						padding: 0;
-						width: 100%;
+						// width: 100%;
 						overflow-x: hidden;
 					}
 
@@ -512,7 +517,7 @@
 
 					> .content {
 						> :last-child {
-							margin-bottom: 0;
+							margin-bottom: 2rem;
 						}
 
 						> section {
