@@ -3006,7 +3006,7 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
     display: none;
   }
   #wrapper > section > .content > :last-child {
-    margin-bottom: 0;
+    margin-bottom: 2rem;
   }
   #wrapper > section > .content > section {
     left: 0;
