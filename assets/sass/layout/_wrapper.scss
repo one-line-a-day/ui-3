@@ -140,7 +140,7 @@
 
 				> .content {
 					// padding: 0 $pad ($pad * $tbFactor) $pad;
-					padding: 0 $pad ($pad) $pad;
+					padding: 0 $pad 0 $pad;
 
 					> section {
 						margin: ($pad * $tbFactor) 0;
@@ -238,7 +238,11 @@
 						display:flex;
 						flex-wrap:wrap;
 						justify-content:space-evenly;
-						padding:0 0 1rem 0;
+						// padding:0 0 1rem 0;
+
+						@include breakpoint('>=large') {
+							margin-bottom:-12px;
+						}
 					}
 				}
 
@@ -325,7 +329,7 @@
 
 				// Intro.
 					&.intro {
-						align-items: center;
+						align-items: self-end;
 
 						> header {
 							padding-top: 3rem;
@@ -432,7 +436,7 @@
 						width: 100%;
 
 						ul.actions {
-							justify-content: flex-start;
+							justify-content: center;
 						}
 					}
 
@@ -468,6 +472,7 @@
 							background-color: _palette(bg);
 							display: flex;
 							flex-direction: column;
+							align-items:center;
 							padding:0;
 						}
 
@@ -480,7 +485,7 @@
 						}
 
 						> :last-child {
-							margin-bottom: 0;
+							margin-bottom: 1rem;
 						}
 
 						// Line.

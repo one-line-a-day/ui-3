@@ -208,7 +208,7 @@ h1.logo-text {
 h2 {
   font-size: 1.25rem;
   font-weight: 800;
-  margin: 1rem 0 2rem 0;
+  margin: 1rem 0;
 }
 @media screen and (min-width: 1153px) {
   h2 {
@@ -332,6 +332,10 @@ hr.major {
   hr.major {
     margin: 3rem 0;
   }
+}
+
+small {
+  font-size: 0.5rem;
 }
 
 /* Row */
@@ -1477,7 +1481,7 @@ button,
   background-color: transparent;
   border-radius: 5px;
   border: 0;
-  box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
+  box-shadow: inset 0 0 0 2px #fdb9ac;
   color: #ffffff !important;
   cursor: pointer;
   display: inline-block;
@@ -1570,6 +1574,7 @@ button.primary,
 .button.primary {
   background-color: #fd5d67;
   color: #ffffff !important;
+  width: 200px;
 }
 input[type=submit].primary:hover,
 input[type=reset].primary:hover,
@@ -2413,6 +2418,7 @@ a.top-top:hover {
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: -1.25rem 0 0 -1.25rem;
   width: calc(100% + 1.25rem);
 }
@@ -2708,7 +2714,11 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 0 0 1rem 0;
+}
+@media screen and (min-width: 1153px) {
+  #wrapper section > .content.store-buttons {
+    margin-bottom: -12px;
+  }
 }
 #wrapper section > footer {
   grid-area: footer;
@@ -2765,7 +2775,7 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   margin-top: 6rem;
 }
 #wrapper > section.intro {
-  align-items: center;
+  align-items: self-end;
 }
 #wrapper > section.intro > header {
   padding-top: 3rem;
@@ -2922,7 +2932,7 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
     width: 100%;
   }
   #wrapper section > header ul.actions {
-    justify-content: flex-start;
+    justify-content: center;
   }
   #wrapper section > .content {
     padding: 0;
@@ -2950,13 +2960,14 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
     background-color: #442587;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 0;
   }
   #wrapper > section > header.store-buttons {
     background-color: #fdb9ac;
   }
   #wrapper > section > header > :last-child {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
   }
   #wrapper > section > header:before {
     display: none;
@@ -3025,7 +3036,7 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
     background: none;
   }
   #wrapper > section > .content {
-    padding: 0 4rem 4rem 4rem;
+    padding: 0 4rem 0 4rem;
   }
   #wrapper > section > .content > section {
     margin: 4rem 0;
@@ -3052,7 +3063,7 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
     background: none;
   }
   #wrapper > section > .content {
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 2rem 0 2rem;
   }
   #wrapper > section > .content > section {
     margin: 3rem 0;
@@ -3079,7 +3090,7 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
     background: none;
   }
   #wrapper > section > .content {
-    padding: 0 1.5rem 1.5rem 1.5rem;
+    padding: 0 1.5rem 0 1.5rem;
   }
   #wrapper > section > .content > section {
     margin: 2.25rem 0;

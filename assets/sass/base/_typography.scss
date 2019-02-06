@@ -102,7 +102,8 @@
 	h2 {
 		font-size: 1.25rem;
 		font-weight: _font(weight-heading);
-		margin: 1rem 0 _size(element-margin) 0;
+		// margin: 1rem 0 _size(element-margin) 0;
+		margin: 1rem 0;
 		// text-decoration: overline;
 
 		@include breakpoint('>=large') {
@@ -235,4 +236,8 @@
 				margin: (_size(element-margin) * 1.5) 0;
 			}
 		}
+	}
+
+	small {
+		font-size: 0.5rem;
 	}
