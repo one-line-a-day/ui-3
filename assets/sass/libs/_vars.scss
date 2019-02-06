@@ -12,13 +12,14 @@
 
 // Size.
 	$size: (
-		border-radius:			0.325rem,
+		// border-radius:			0.325rem,
+		border-radius:			5px,
 		element-height:			3rem,
 		element-margin:			2rem,
 		header-width:			25rem,
 		subheader-width:		22rem,
 		content-width:			60rem,
-		line-width:				2px,
+		line-width:				7px,
 		form-gutter:			2rem,
 		gallery-gutter:			1.25rem,
 	);
@@ -41,6 +42,7 @@
 
 // Palette.
 	$palette: (
+		// UX PALETTE by JASON ZIMMERMAN
 		ux-primary:				#442587,
 		ux-second:				#fd5d67,
 		ux-third:				#fdb9ac,

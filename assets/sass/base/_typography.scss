@@ -68,8 +68,17 @@
 		// background: _palette(ux-grey);
 		color: _palette(ux-white);
 		&.first-p {
+			// background: _palette(ux-primary);
+			// color: _palette(ux-white);
+
 			color: _palette(ux-alt-text);
+			@include breakpoint('>=large') {
+				color: _palette(ux-white);
+			}
+
 		}
+
+		
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -106,8 +115,11 @@
 		font-size: 1.25rem;
 		font-weight: _font(weight-heading);
 		margin: 0 0 _size(element-margin) 0;
-		// color: _palette(ux-alt-text);
-		color: _palette(ux-white);
+		color: _palette(ux-alt-text);
+
+		@include breakpoint('>=large') {
+			color: _palette(ux-white);
+		}
 	}
 
 	h3 {
