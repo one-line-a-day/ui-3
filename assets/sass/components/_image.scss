@@ -13,9 +13,10 @@
 
 		&.app-store-btn {
 			// border:1px solid red;
-			width:140px;
+			// width:167px;
 			text-decoration: none;
-			margin-bottom:20px;
+			// margin-bottom:20px;
+			// margin-top: -40px;
 		}
 
 		img {
@@ -181,6 +182,11 @@
 		max-width:100%;
 		display:block;
 		align-self: center;
-		padding-bottom:20px;
-		margin-top:-20px;
+		
+		// margin-top:-20px;
+		z-index:3;
+
+		@include breakpoint('>=large') {
+			padding-bottom:20px;
+		}
 	}

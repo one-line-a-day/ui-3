@@ -67,18 +67,6 @@
 		margin: 0 0 _size(element-margin) 0;
 		// background: _palette(ux-grey);
 		color: _palette(ux-white);
-		&.first-p {
-			// background: _palette(ux-primary);
-			// color: _palette(ux-white);
-
-			color: _palette(ux-alt-text);
-			@include breakpoint('>=large') {
-				color: _palette(ux-white);
-			}
-
-		}
-
-		
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -87,7 +75,8 @@
 		font-weight: _font(weight-heading-light);
 		letter-spacing: _font(kerning-heading);
 		line-height: 1.75;
-		margin: 0 0 (_size(element-margin) * 0.75) 0;
+		margin: 0;
+		// margin: 0 0 (_size(element-margin) * 0.75) 0;
 		text-transform: uppercase;
 
 		a {
@@ -100,22 +89,22 @@
 		font-family: _font(family-logo);
 		font-size: 6rem;
 		font-weight: _font(weight);
-		// letter-spacing: _font(kerning-heading-alt);
 		letter-spacing: 0;
 		line-height: 1.1;
 		margin: 0 0 (_size(element-margin) * 0.75) 0;
 		text-transform: none;
 
 		&.logo-text {
-			// color: _palette(ux-second);
+			display:none;
 		}
 	}
 
 	h2 {
 		font-size: 1.25rem;
 		font-weight: _font(weight-heading);
-		margin: 0 0 _size(element-margin) 0;
-		color: _palette(ux-alt-text);
+		// margin: 1rem 0 _size(element-margin) 0;
+		margin: 1rem 0;
+		// text-decoration: overline;
 
 		@include breakpoint('>=large') {
 			color: _palette(ux-white);
@@ -149,7 +138,7 @@
 		h2 {
 			font-size: 1.25rem;
 			line-height: 1.7;
-			color: _palette(ux-alt-text);
+			// color: _palette(ux-alt-text);
 
 		}
 
@@ -247,4 +236,8 @@
 				margin: (_size(element-margin) * 1.5) 0;
 			}
 		}
+	}
+
+	small {
+		font-size: 0.5rem;
 	}

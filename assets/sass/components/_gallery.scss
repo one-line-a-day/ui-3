@@ -21,6 +21,7 @@
 
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 		margin: ($gutter * -1) 0 0 ($gutter * -1);
 		width: calc(100% + #{$gutter});
 
