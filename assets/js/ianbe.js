@@ -22,6 +22,5 @@ class SlideShow {
 }
 
 let uxSlideShow = document.querySelectorAll('.slide-show');
-console.log(uxSlideShow);
 uxSlideShow.forEach(el => new SlideShow(el));
 

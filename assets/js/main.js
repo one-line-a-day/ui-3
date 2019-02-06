@@ -38,49 +38,49 @@
 	// Scrolly.
 		$('.scrolly')
 			.scrolly({
-				offset: 5
+				offset: 0
 			});
 
 	// Polyfill: Object fit.
-		// if (!browser.canUse('object-fit')) {
+		if (!browser.canUse('object-fit')) {
 
-		// 	$('.image[data-position]').each(function() {
+			$('.image[data-position]').each(function() {
 
-		// 		var $this = $(this),
-		// 			$img = $this.children('img');
+				var $this = $(this),
+					$img = $this.children('img');
 
-		// 		// Apply img as background.
-		// 			$this
-		// 				.css('background-image', 'url("' + $img.attr('src') + '")')
-		// 				.css('background-position', $this.data('position'))
-		// 				.css('background-size', 'cover')
-		// 				.css('background-repeat', 'no-repeat');
+				// Apply img as background.
+					$this
+						.css('background-image', 'url("' + $img.attr('src') + '")')
+						.css('background-position', $this.data('position'))
+						.css('background-size', 'cover')
+						.css('background-repeat', 'no-repeat');
 
-		// 		// Hide img.
-		// 			$img
-		// 				.css('opacity', '0');
+				// Hide img.
+					$img
+						.css('opacity', '0');
 
-		// 	});
+			});
 
-		// 	$('.gallery > a').each(function() {
+			$('.gallery > a').each(function() {
 
-		// 		var $this = $(this),
-		// 			$img = $this.children('img');
+				var $this = $(this),
+					$img = $this.children('img');
 
-		// 		// Apply img as background.
-		// 			$this
-		// 				.css('background-image', 'url("' + $img.attr('src') + '")')
-		// 				.css('background-position', 'center')
-		// 				.css('background-size', 'cover')
-		// 				.css('background-repeat', 'no-repeat');
+				// Apply img as background.
+					$this
+						.css('background-image', 'url("' + $img.attr('src') + '")')
+						.css('background-position', 'center')
+						.css('background-size', 'cover')
+						.css('background-repeat', 'no-repeat');
 
-		// 		// Hide img.
-		// 			$img
-		// 				.css('opacity', '0');
+				// Hide img.
+					$img
+						.css('opacity', '0');
 
-		// 	});
+			});
 
-		// }
+		}
 
 	// Gallery.
 		$('.gallery')
