@@ -157,11 +157,18 @@ a {
   -ms-transition: border-bottom-color 0.25s ease-in-out;
   transition: border-bottom-color 0.25s ease-in-out;
   text-decoration: none;
-  color: #ffffff;
+  color: #fd5d67;
 }
 a:hover {
+  color: #fdb9ac;
   text-decoration: none;
   border-bottom-color: transparent;
+}
+a.icon {
+  color: #ffffff;
+}
+a.icon:hover {
+  color: #fdb9ac;
 }
 
 strong, b {
@@ -336,6 +343,14 @@ hr.major {
 
 small {
   font-size: 0.5rem;
+}
+
+.fa {
+  color: #fdb9ac;
+}
+.fa:hover {
+  cursor: pointer;
+  color: #fd5d67;
 }
 
 /* Row */
@@ -2265,7 +2280,7 @@ ul.icons li .icon:before {
   font-size: 1.25rem;
 }
 ul.icons li .icon:hover {
-  background-color: rgba(144, 144, 144, 0.1);
+  background-color: #442587;
 }
 
 /* Table */
@@ -2351,13 +2366,6 @@ a.arrow:before {
   }
 }
 
-a.top-top {
-  color: #fd5d67;
-}
-a.top-top:hover {
-  color: #fdb9ac;
-}
-
 /* Gallery */
 @-moz-keyframes gallery-modal-spinner {
   0% {
@@ -2418,7 +2426,6 @@ a.top-top:hover {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   margin: -1.25rem 0 0 -1.25rem;
   width: calc(100% + 1.25rem);
 }
@@ -2437,12 +2444,6 @@ a.top-top:hover {
   object-fit: cover;
   object-position: center;
   width: 100%;
-  border: 1px dashed #fd5d67;
-  border-radius: 5px;
-  padding: 1rem;
-}
-.gallery a img:hover {
-  border: 1px dashed #ffffff;
 }
 .gallery a.landscape {
   width: 100%;
@@ -2616,6 +2617,30 @@ a.top-top:hover {
   .gallery a.portrait img {
     height: 14rem;
   }
+}
+
+.slide-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide-show .slide-show-slides {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide-show .slide-show-slides a {
+  display: flex;
+  justify-content: center;
+}
+.slide-show img.slides-img {
+  max-width: 300px;
+  max-height: 300px;
+  display: none;
+}
+.slide-show img.slides-img.slides-active {
+  display: block;
 }
 
 /* Feature Icons */
@@ -2936,7 +2961,6 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   }
   #wrapper section > .content {
     padding: 0;
-    width: 100%;
     overflow-x: hidden;
   }
   #wrapper section > footer {

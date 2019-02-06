@@ -54,13 +54,11 @@
 							<i class="fa fa-arrow-down fa-2x"></i>
 						</a>
 					</li>
-
-					<!-- <li><a href="#second" class="arrow scrolly"><span class="label">Next</span></a></li> -->
 				</ul>
 			</header>
 
 			<div class="content">
-				<p class="first-p">One Line a Day is the app version of the popular one-line-a-day journal. Your daily entries are
+				<p>One Line a Day is the app version of the popular one-line-a-day journal. Your daily entries are
 					privately stored on your device (mobile version), or safely online
 					if you use our web-based version. You can also choose to get
 					regular reminders, so you’ll never forget to jot down something short and sweet from your day—a funny quote, crazy
@@ -82,17 +80,26 @@
 				</ul>
 			</header>
 
-			<div class="content">
+			<!-- custom slideshow component -->
+			<div class="content slide-show">
+				<i class="slides-btn-left fa fa-arrow-left fa-3x"></i>
+					<div class="slide-show-slides">
+						<a href="images/ux-desktop.png"><img class="slides-img" src="images/ux-desktop.png" alt="desktop" /></a>
+						<a href="images/ux-phone.png"><img class="slides-img" src="images/ux-phone.png" alt="phone" /></a>
+						<a href="images/ux-both.png"><img class="slides-img" src="images/ux-both.png" alt="both" /></a>
+					</div>
+					<i class="slides-btn-right fa fa-arrow-right fa-3x"></i>
+			</div>
+
+			<!-- default gallery -->
+			<!-- <div class="content">
 				<div class="gallery">
-					<!-- <small>Click to Expand</small> -->
 					<a href="images/ux-desktop.png" class="landscape"><img src="images/ux-desktop.png" alt="" /></a>
 					<a href="images/ux-phone.png"><img src="images/ux-phone.png" alt="" /></a>
 					<a href="images/ux-both.png"><img src="images/ux-both.png" alt="" /></a>
 				</div>
-			</div>
+			</div> -->
 		</section> <!-- //second-->
-
-
 
 		<!-- third FEATURES -->
 		<section id="third">
@@ -101,13 +108,13 @@
 			</header>
 
 			<div class="content">
-				<p>Download the <a href="#top-top" class="scrolly top-top">mobile app</a>, or <a href="#top-top" class="scrolly top-top">create
+				<p>Download the <a href="#top-top" class="scrolly">mobile app</a>, or <a href="#top-top" class="scrolly">create
 						an account</a> online, and start recording memories in your private journal!</p>
 
 				<ul class="feature-icons">
-					<li class="icon fa-pencil-square-o">Create: One Line a Day</li>
+					<li class="icon fa-address-book">Create: One Line a Day</li>
 					<li class="icon fa-search">Review: Lines by Week, Month, and Year</li>
-					<li class="icon fa-file">Update: Things</li>
+					<li class="icon fa-pencil">Update: Things</li>
 					<li class="icon fa-trash">Delete: Anything / Everything</li>
 				</ul>
 
@@ -118,7 +125,7 @@
 				<ul class="actions">
 					<li>
 						<center>
-							<a href="#top-top" class="scrolly top-top">
+							<a href="#top-top" class="scrolly">
 							<i class="fa fa-arrow-up fa-5x"></i>
 							</a>
 						</center>
@@ -430,7 +437,8 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-
+	<script src="assets/js/ianbe.js"></script>
+	
 </body>
 
 </html>
