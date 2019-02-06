@@ -2626,6 +2626,7 @@ a.arrow:before {
 }
 .slide-show .slide-show-slides {
   width: 100%;
+  min-width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;

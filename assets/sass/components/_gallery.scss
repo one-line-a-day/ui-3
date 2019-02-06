@@ -247,7 +247,10 @@
 
 	.slide-show-slides {
 		// border:1px solid cyan;
+		// background:white;
+		// border-radius:15px;
 		width:100%;
+		min-width:300px;
 		display:flex;
 		justify-content: center;
 		align-items:center;
@@ -260,7 +263,6 @@
 	}
 
 	img.slides-img {
-		// border:1px solid yellow;
 		max-width:300px;
 		max-height:300px;
 		display:none;
