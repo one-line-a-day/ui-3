@@ -25,31 +25,3 @@ let uxSlideShow = document.querySelectorAll('.slide-show');
 console.log(uxSlideShow);
 uxSlideShow.forEach(el => new SlideShow(el));
 
-// custom slideshow component _gallery.scss
-// .slide-show {
-// 	// border:1px solid red;
-// 	max-width:500px;
-	
-// 	display: flex;
-// 	align-items: center;
-
-// 	.slide-show-slides {
-// 		width:60%;
-// 		// border:1px solid cyan;
-// 		// background: _palette(ux-second);
-// 		// border-radius:15px;
-// 		display:flex;
-// 		justify-content: center;
-// 		align-items:center;
-// 	}
-
-// 	img.slides-img {
-// 		max-width:500px;
-// 		display:none;
-
-// 		&.slides-active {
-// 			display:block;
-// 			max-width:77%;
-// 		}
-// 	}
-// }
