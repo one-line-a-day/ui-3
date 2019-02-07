@@ -83,11 +83,11 @@
 		}
 
 	// Gallery.
-		$('.gallery')
+		$('.gallery-effect')
 			.on('click', 'a', function(event) {
 
 				var $a = $(this),
-					$gallery = $a.parents('.gallery'),
+					$gallery = $a.parents('.gallery-effect'),
 					$modal = $gallery.children('.modal'),
 					$modalImg = $modal.find('img'),
 					href = $a.attr('href');
