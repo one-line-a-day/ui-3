@@ -3125,9 +3125,6 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   #wrapper > section > header h1:after, #wrapper > section > header h2:after {
     display: none;
   }
-  #wrapper > section > .content > :last-child {
-    margin-bottom: 2rem;
-  }
   #wrapper > section > .content > section {
     left: 0;
   }
