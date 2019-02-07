@@ -83,10 +83,12 @@
 		}
 
 	// Gallery.
+	// change from .gallery to .gallery-effect to bypass template styles
 		$('.gallery-effect')
 			.on('click', 'a', function(event) {
 
 				var $a = $(this),
+					// change from .gallery to .gallery-effect to bypass template styles
 					$gallery = $a.parents('.gallery-effect'),
 					$modal = $gallery.children('.modal'),
 					$modalImg = $modal.find('img'),

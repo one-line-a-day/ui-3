@@ -278,7 +278,7 @@
 	}
 } //end .slide-show custom styles
 
-// gallery-effect trimmed from template
+// .modal for gallery-effect trimmed from template
 .modal {
 	@include vendor('display', 'flex');
 	@include vendor('align-items', 'center');
@@ -378,4 +378,4 @@
 			opacity: 0;
 		}
 	}
-}
+} //end .modal for gallery-effect
