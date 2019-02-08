@@ -39,12 +39,18 @@
 						}
 
 					// Headings.
-						h1, h2 {
+						h1, h2, h4 {
 
 							// Line connector.
 								&:before {
 									right: ($pad * -1);
-									width: ($pad * 0.5);
+									width: ($pad * 0.75);
+									top:15px;
+
+									@include breakpoint('<large') {
+										// visibility:hidden;
+										display:none;
+									}
 								}
 
 							// Terminator.
@@ -274,7 +280,7 @@
 						}
 
 					// Headings.
-						h1, h2 {
+						h1, h2, h4 {
 							position: relative;
 
 							// Line connector.
