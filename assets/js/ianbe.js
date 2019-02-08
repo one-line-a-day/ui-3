@@ -14,7 +14,7 @@ class SlideShow {
 
     cycle(ev) {
         // fade out
-        TweenMax.to('.slides-active',0.5, {opacity:0});
+        TweenMax.to('.slides-active',0.2, {opacity:0});
         this.slides[this.index].classList.remove('slides-active');
         // load next slide
         if (ev.srcElement.classList.contains('slides-btn-right')) {
@@ -31,3 +31,12 @@ class SlideShow {
 
 let uxSlideShow = document.querySelectorAll('.slide-show');
 uxSlideShow.forEach(el => new SlideShow(el));
+
+let aboutLink = document.querySelector('#about h4');
+aboutLink.addEventListener('click', ev => {
+    let hiddenContent = document.querySelector('.about-content');
+    hiddenContent.classList.toggle('hidden');
+    let clickText = document.querySelector('#about header p');
+    console.log(clickText.textContent);
+    clickText.textContent === 'click to expand' ? clickText.textContent = 'click to close' : clickText.textContent = 'click to expand';
+} )

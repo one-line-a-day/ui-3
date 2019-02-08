@@ -3,5 +3,3 @@
 * Responsive to Mobile, Tablet, and Desktop sizes
 * Custom SlideShow Component w/ Greensock Animation
 * Styled with Sass according to UX Style Guide
-
-

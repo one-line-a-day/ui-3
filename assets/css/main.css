@@ -353,6 +353,11 @@ small {
   color: #fd5d67;
 }
 
+#about h4:hover {
+  color: #fd5d67;
+  cursor: pointer;
+}
+
 /* Row */
 .row {
   display: flex;
@@ -2121,9 +2126,6 @@ ul.items > li {
   padding-left: 0;
   margin: 0 0 3rem 0;
 }
-ul.items > li > h3 {
-  margin: 0 0 1rem 0;
-}
 ul.items > li > :last-child {
   margin-bottom: 0;
 }
@@ -2766,6 +2768,24 @@ a.arrow:before {
   opacity: 0;
 }
 
+.floating-heads {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+}
+.floating-heads img {
+  border: 2px solid white;
+  border-top: 0;
+  margin-bottom: 20px;
+  max-width: 30%;
+  border-radius: 5px;
+}
+.floating-heads p {
+  width: 100px;
+  margin: 0;
+  max-width: 80%;
+}
 /* Feature Icons */
 ul.feature-icons {
   display: flex;
@@ -2886,10 +2906,10 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   position: absolute;
   width: 7px;
 }
-#wrapper > section > header h1, #wrapper > section > header h2 {
+#wrapper > section > header h1, #wrapper > section > header h2, #wrapper > section > header h4 {
   position: relative;
 }
-#wrapper > section > header h1:before, #wrapper > section > header h2:before {
+#wrapper > section > header h1:before, #wrapper > section > header h2:before, #wrapper > section > header h4:before {
   background: #de535c;
   content: "";
   display: block;
@@ -2897,7 +2917,7 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   position: absolute;
   top: 1rem;
 }
-#wrapper > section > header h1:after, #wrapper > section > header h2:after {
+#wrapper > section > header h1:after, #wrapper > section > header h2:after, #wrapper > section > header h4:after {
   background: #de535c;
   border-radius: 0.5rem;
   content: "";
@@ -2979,11 +2999,17 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   height: calc(100% + 10rem);
   left: calc(50vw - 5rem);
 }
-#wrapper > section > header h1:before, #wrapper > section > header h2:before {
+#wrapper > section > header h1:before, #wrapper > section > header h2:before, #wrapper > section > header h4:before {
   right: -5rem;
-  width: 2.5rem;
+  width: 3.75rem;
+  top: 15px;
 }
-#wrapper > section > header h1:after, #wrapper > section > header h2:after {
+@media screen and (max-width: 1152px) {
+  #wrapper > section > header h1:before, #wrapper > section > header h2:before, #wrapper > section > header h4:before {
+    display: none;
+  }
+}
+#wrapper > section > header h1:after, #wrapper > section > header h2:after, #wrapper > section > header h4:after {
   right: -2.5rem;
 }
 #wrapper > section > .content > section {
@@ -3027,19 +3053,31 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
     height: calc(100% + 8rem);
     left: calc(50vw - 4rem);
   }
-  #wrapper > section > header h1:before, #wrapper > section > header h2:before {
+  #wrapper > section > header h1:before, #wrapper > section > header h2:before, #wrapper > section > header h4:before {
     right: -4rem;
-    width: 2rem;
+    width: 3rem;
+    top: 15px;
   }
-  #wrapper > section > header h1:after, #wrapper > section > header h2:after {
+}
+@media screen and (max-width: 1280px) and (max-width: 1152px) {
+  #wrapper > section > header h1:before, #wrapper > section > header h2:before, #wrapper > section > header h4:before {
+    display: none;
+  }
+}
+@media screen and (max-width: 1280px) {
+  #wrapper > section > header h1:after, #wrapper > section > header h2:after, #wrapper > section > header h4:after {
     right: -2rem;
   }
+}
+@media screen and (max-width: 1280px) {
   #wrapper > section > .content > section {
     left: calc(-50vw - 4rem);
   }
   #wrapper > section > .content > section > header {
     width: 30rem;
   }
+}
+@media screen and (max-width: 1280px) {
   #wrapper > section.intro > header:before {
     margin-left: calc(50vw - 8rem);
   }
@@ -3325,6 +3363,36 @@ body.is-ie #wrapper > section > .content > section {
   body.is-ie #wrapper section > footer {
     padding: 4rem;
   }
+}
+
+#about header p {
+  font-size: 0.65rem;
+}
+@media screen and (min-width: 1153px) {
+  #about header p {
+    margin-right: 4px;
+    font-size: 0.55rem;
+  }
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-content i {
+  margin-bottom: -8px;
+}
+.about-content p {
+  line-height: 1.5;
+  text-align: center;
+}
+.about-content.hidden {
+  display: none;
+}
+
+#lambda-logo:hover {
+  filter: invert(1);
 }
 
 /*# sourceMappingURL=main.css.map */
