@@ -259,12 +259,9 @@
 		}
 	}
 
-	
-
-	// a.top-top {
-	// 	color: _palette(ux-third);
-	// 	&:hover {
-	// 		color: _palette(ux-third);
-	// 	}
-
-	// }
+#about h4 {
+	&:hover {
+		color: _palette(ux-second);
+		cursor: pointer;
+	}
+}

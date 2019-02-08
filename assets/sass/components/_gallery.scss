@@ -379,3 +379,34 @@
 		}
 	}
 } //end .modal for gallery-effect
+
+// ABOUT PAGE 
+.floating-heads {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	align-items: center;
+
+	// border:1px solid yellow;
+	// padding-left:20px;
+
+	img {
+		border:2px solid white;
+		border-top:0;
+		margin-bottom:20px;
+		max-width:30%;
+		border-radius:5px;
+	}
+
+	p {
+		width:100px;
+		margin:0;
+		max-width:80%;
+	}
+
+	h6 {
+		// margin-left:25px;
+
+	}
+
+}

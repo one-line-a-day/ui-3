@@ -353,6 +353,11 @@ small {
   color: #fd5d67;
 }
 
+#about h4:hover {
+  color: #fd5d67;
+  cursor: pointer;
+}
+
 /* Row */
 .row {
   display: flex;
@@ -2766,6 +2771,24 @@ a.arrow:before {
   opacity: 0;
 }
 
+.floating-heads {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+}
+.floating-heads img {
+  border: 2px solid white;
+  border-top: 0;
+  margin-bottom: 20px;
+  max-width: 30%;
+  border-radius: 5px;
+}
+.floating-heads p {
+  width: 100px;
+  margin: 0;
+  max-width: 80%;
+}
 /* Feature Icons */
 ul.feature-icons {
   display: flex;
@@ -3325,6 +3348,36 @@ body.is-ie #wrapper > section > .content > section {
   body.is-ie #wrapper section > footer {
     padding: 4rem;
   }
+}
+
+#about header p {
+  font-size: 0.65rem;
+}
+@media screen and (min-width: 1153px) {
+  #about header p {
+    margin-right: 4px;
+    font-size: 0.55rem;
+  }
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-content i {
+  margin-bottom: -8px;
+}
+.about-content p {
+  line-height: 1.5;
+  text-align: center;
+}
+.about-content.hidden {
+  display: none;
+}
+
+#lambda-logo:hover {
+  filter: invert(1);
 }
 
 /*# sourceMappingURL=main.css.map */
